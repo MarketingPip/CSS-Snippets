@@ -25,3 +25,18 @@ div[bar] {
 
 ---
 
+
+
+**Style Aria-Current without "class"**
+
+```css
+[aria-current]:not([aria-current="false"]) {
+  font-weight: bold;
+}
+```
+
+
+
+     <a href="https://github.com/" aria-current="false">GitHub</a>
+
+
