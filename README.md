@@ -25,9 +25,22 @@ div[bar] {
 
 ---
 
-
-
 **Style Aria-Current without "class"**
+
+```css
+[aria-current] {
+  font-weight: bold;
+}
+```
+
+
+
+     <a href="https://github.com/" aria-current="false">GitHub</a>
+
+
+---
+
+**Style Aria-Current using If Not Statment**
 
 ```css
 [aria-current]:not([aria-current="false"]) {
@@ -36,8 +49,11 @@ div[bar] {
 ```
 
 
-
+     <!-----This will NOT be bold---->
      <a href="https://github.com/" aria-current="false">GitHub</a>
+     
+     <!-----This will be bold---->
+     <a href="https://github.com/" aria-current="true">GitHub</a>
 
 
 ---
