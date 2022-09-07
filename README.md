@@ -40,3 +40,37 @@ div[bar] {
      <a href="https://github.com/" aria-current="false">GitHub</a>
 
 
+---
+
+Pure CSS Link Preview
+
+
+```css
+
+.link_preview {
+	 position: relative;
+	 display: inline-block;
+	 color: #228475;
+}
+ .link_preview::before {
+	 position: absolute;
+	 top: 100%;
+	 content: attr(href);
+	 opacity: 0;
+	 display: block;
+	 transition: 0.25s all;
+	 height: 0;
+	 overflow: hidden;
+	 padding: 0.25em 1em;
+	 background: #fff;
+	 box-shadow: 0 0 3px 0 rgba(0, 0, 0, .3);
+	 font-size: 0.7em;
+	 color: #555;
+}
+ .link_preview:hover::before {
+	 opacity: 1;
+	 display: block;
+	 height: auto;
+}
+```
+
