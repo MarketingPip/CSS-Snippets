@@ -90,3 +90,18 @@ Pure CSS Link Preview
 }
 ```
 
+
+
+---
+
+Set a clickable / link with :after
+
+Taken from - [html - CSS After Element to insert mailto link? - Stack Overflow](https://stackoverflow.com/questions/9704802/css-after-element-to-insert-mailto-link)
+
+<p>This text is always here.</p>
+<a class="mobile" href="mailto:info@site.com"></a>
+
+.mobile:after {
+     content:'Click here to email us.'
+}
+
