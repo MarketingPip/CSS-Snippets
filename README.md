@@ -94,7 +94,7 @@ Pure CSS Link Preview
 
 ---
 
-Set a clickable / link with :after
+Put a HTML / link / mailto etc in a content attribute. 
 
 Taken from - [html - CSS After Element to insert mailto link? - Stack Overflow](https://stackoverflow.com/questions/9704802/css-after-element-to-insert-mailto-link)
 
